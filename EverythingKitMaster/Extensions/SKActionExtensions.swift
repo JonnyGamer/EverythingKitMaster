@@ -19,6 +19,13 @@ extension SKAction {
 }
 
 extension SKAction {
+    static func change(from: CGFloat, to: CGFloat, duration: Double, action: @escaping (CGFloat) -> ()) -> SKAction {
+        .customAction(withDuration: duration, actionBlock: { _, j in
+            let d = from + (to - from) * j / CGFloat(duration)
+            action(d)
+        })
+    }
+    
     static func fillColor(from: (r: CGFloat, g: CGFloat, b: CGFloat), to: (r: CGFloat, g: CGFloat, b: CGFloat), rgb: Bool, duration: Double) -> SKAction {
         .customAction(withDuration: duration, actionBlock: { i, j in
             let rinseR = from.r + (to.r - from.r) * j / CGFloat(duration)

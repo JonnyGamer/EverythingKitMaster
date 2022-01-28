@@ -28,7 +28,7 @@ open class Scene: SKNode {
     var option = false
     var chatBox: ChatBox?
     
-    public init(_ screenSize: CGSize = CGSize.init(width: w, height: h)) {
+    public required init(_ screenSize: CGSize = CGSize.init(width: w, height: h)) {
         self.background = SKSpriteNode.init(color: .white, size: .veryBig)
         background.zPosition = -.infinity
         
@@ -51,13 +51,25 @@ open class Scene: SKNode {
     public func movedToView() {}
     public func tapped(tile: Tilable) {}
     public func swiped(direction: CGVector) {}
-    public func present(_ node: Scene, incomingFrom: Incoming = .center, duration: Double = 0.5) {
-        (scene as? RootScene)?.present(node, incomingFrom: incomingFrom, duration: duration)
+    public func present(_ node: Scene.Type, incomingFrom: Incoming = .center, duration: Double = 0.5) {
+        (scene as? RootScene)?.present(node.init(), incomingFrom: incomingFrom, duration: duration)
     }
-    public func present(_ node: Scene, fade: Bool, duration: Double = 0.5) {
-        (scene as? RootScene)?.present(node, fade: fade, duration: duration)
+    public func present(_ node: Scene.Type, fade: Bool, duration: Double = 0.5) {
+        (scene as? RootScene)?.present(node.init(), fade: fade, duration: duration)
     }
     func pressedKey(_ key: Keys) {}
+    func _onKeyDown(_ key: Keys) {
+        if key == .up {
+            chatBox?.moveSelection(1)
+        } else if key == .down {
+            chatBox?.moveSelection(-1)
+        } else if key == .return {
+            chatBox?.next()
+        }
+    }
+    
+    func onKeyDown(_ key: Keys) {}
+    
     
 }
 

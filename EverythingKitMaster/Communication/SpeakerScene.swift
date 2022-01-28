@@ -8,8 +8,10 @@
 import SpriteKit
 
 protocol SpeakerScene {
-    var peopleToSpeakWith: [SuperCharacters:SpeakerEnum] { get }
-    func talkingAnimation(_ person: String, talkingOver: String) -> SKAction
+    var backgroundMusic: MusicType { get }
+    var peopleToSpeakWith: [SuperCharacters:Communication] { get }
+    
+    
 }
 extension SpeakerScene {
     func talkingAnimation(_ person: String, talkingOver: String) -> SKAction {
@@ -18,4 +20,10 @@ extension SpeakerScene {
         let animation = character.animation()
         return .speakingAnimation(words: talkingOver, sound: character.sound(over: talkingOver), anim1: animation.0, anim2: animation.1)
     }
+    
+    func setupScene(_ scene: Scene) {
+        Music.o.playMusic(backgroundMusic.rawValue)
+        
+    }
+    
 }

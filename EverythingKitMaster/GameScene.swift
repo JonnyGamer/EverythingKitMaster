@@ -8,45 +8,51 @@
 import SpriteKit
 import GameplayKit
 
+enum MusicList: String, MusicType {
+    case theIndustry = "The Industry"//Music.o.playMusic("The Industry")
+}
+
 class GameScene: Scene, SpeakerScene {
-    var peopleToSpeakWith: [SuperCharacters : SpeakerEnum] = [
-        .base(.basketShop) : .message(["Foo Bar!"])
+    
+    var backgroundMusic: MusicType = MusicList.theIndustry
+    var peopleToSpeakWith: [SuperCharacters : Communication] = [
+        .base(.basketShop, 250, 250) : .message(["Foo Bar!"])
     ]
     
     override func touchBegan() {
         
-        addChatBox(words: [
-            "1, 2, 3, testing a very very long long string ;)",
-            "woah...",
-            "knewfjkndwnkjwenjdnwkejknkjnfjknfewnkjew",
-            "knewfjkndwnkjwenjdnwkejknkjnfjknfewnkjew",
-            "knewfjkndwnkjwenjdnwkejknkjnfjknfewnkjew",
-            "knewfjkndwnkjwenjdnwkejknkjnfjknfewnkjew",
-            "knewfjkndwnkjwenjdnwkejknkjnfjknfewnkjew",
-        ])
+        if chatBox == nil {
         
-//        canSpeakWith = Speak(color: .red, size: .hundred).then {
-//            $0.speech = .longMessage([
-//                .message(["wo"]),
-//                .message(["bar"]),
-//                .message(["done."]),
-//            ])
-//            $0.personSpeaking = $0
-//        }
-//        
-//        pressedA()
+            let woah = DispatchQueue.init(label: "")
+            woah.async { [self] in
+                message(.long([
+                    .message(["Hi there"]),
+                    .message(["This is something else"]),
+                    .multipleChoice(["Choose One"], [
+                        (["Pick me!"], .message(["You're trash."])),
+                        (["Pick me!"], .message(["You're trash."])),
+                        (["No...","Pick me!"], .message(["You're actually trash!"])),
+                        (["Switch Scene!"], .present(GameScene.self, incomingFrom: .left)),
+                    ]),
+                    .playMusic(MusicList.theIndustry),
+                    .run {
+                        return .random() ? .message(["1"]) : .message(["0"])
+                    }
+                ]))
+            }
+            
+        }
         
-        //self.run(.moveBy(x: 100, y: 0, duration: 1.0).easeInEaseOut())
     }
     
     override func movedToView() {
-//        self.bringUpKeyboard(instant: false, .complete) {
-//            print("Keyboard")
-//        }
+    
     }
     
     override func began() {
         background.color = .white
+        
+        setupScene(self)
         
         SpriteButton.init(size: .hundred, fillColor: (0.53, 0.2, 1.0), rgb: false).then {
             $0.button.addChild(SKLabelNode(text: "foo").then({ text in
@@ -54,7 +60,7 @@ class GameScene: Scene, SpeakerScene {
             }))
             connectButton($0)
             $0.touchEndedOn = { _ in
-                self.present(GameScene(.screenSize), incomingFrom: .left)
+                self.present(GameScene.self, incomingFrom: .left)
             }
             addChild($0)
             $0.place(.right, on: .screen, .right)
@@ -62,7 +68,6 @@ class GameScene: Scene, SpeakerScene {
         }
         
         let stack = HStack([
-            
             
             Toggle.init(default: false, height: 100, color: .green),
             Toggle.init(default: false, height: 100, color: .green),

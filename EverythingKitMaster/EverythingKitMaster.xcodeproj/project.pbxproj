@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B70D82B27A4965D006B9A57 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D82A27A4965D006B9A57 /* Music.swift */; };
+		1B70D82E27A496F4006B9A57 /* The Industry.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D82D27A496F3006B9A57 /* The Industry.m4a */; };
+		1B70D83027A4A1B0006B9A57 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D82F27A4A1B0006B9A57 /* Communication.swift */; };
 		1B99CDE327A3404C00EAA496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99CDE227A3404C00EAA496 /* AppDelegate.swift */; };
 		1B99CDE927A3404C00EAA496 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99CDE827A3404C00EAA496 /* GameScene.swift */; };
 		1B99CDEB27A3404C00EAA496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99CDEA27A3404C00EAA496 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B70D82A27A4965D006B9A57 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		1B70D82D27A496F3006B9A57 /* The Industry.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Industry.m4a"; sourceTree = "<group>"; };
+		1B70D82F27A4A1B0006B9A57 /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
 		1B99CDDF27A3404C00EAA496 /* EverythingKitMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverythingKitMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B99CDE227A3404C00EAA496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B99CDE827A3404C00EAA496 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -78,18 +84,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B70D82C27A496F3006B9A57 /* MusicFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1B70D82D27A496F3006B9A57 /* The Industry.m4a */,
+			);
+			path = MusicFiles;
+			sourceTree = "<group>";
+		};
+		1B70D83127A4AE2F006B9A57 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				1B99CE2527A3600200EAA496 /* ChatBox.swift */,
+				1B70D82F27A4A1B0006B9A57 /* Communication.swift */,
+				1B99CE1F27A35B5D00EAA496 /* SuperCharacters.swift */,
+				1B99CE2127A35BF900EAA496 /* SpeakerScene.swift */,
+				1B99CE1827A35A1C00EAA496 /* Speaker.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
 		1B99CDD627A3404C00EAA496 = {
 			isa = PBXGroup;
 			children = (
 				1B99CDE827A3404C00EAA496 /* GameScene.swift */,
-				1B99CE2527A3600200EAA496 /* ChatBox.swift */,
-				1B99CE1F27A35B5D00EAA496 /* SuperCharacters.swift */,
+				1B70D83127A4AE2F006B9A57 /* Communication */,
 				1B99CE0027A3410000EAA496 /* SceneReference.swift */,
+				1B70D82A27A4965D006B9A57 /* Music.swift */,
 				1B99CE0827A3418100EAA496 /* SKSceneSubclasses */,
 				1B99CE0927A341AC00EAA496 /* Protocols */,
 				1B99CE0A27A341BD00EAA496 /* Extensions */,
 				1B99CE1727A3479B00EAA496 /* SKNodeSubclasses */,
 				1B99CE1C27A35A7100EAA496 /* GameCenter */,
+				1B70D82C27A496F3006B9A57 /* MusicFiles */,
 				1B99CDE127A3404C00EAA496 /* EverythingKitMaster */,
 				1B99CDE027A3404C00EAA496 /* Products */,
 			);
@@ -130,7 +157,6 @@
 			children = (
 				1B99CE0627A3416800EAA496 /* Touchable.swift */,
 				1B99CDFC27A340C500EAA496 /* Then.swift */,
-				1B99CE2127A35BF900EAA496 /* SpeakerScene.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -156,7 +182,6 @@
 				1B99CE0F27A3423800EAA496 /* StackKit.swift */,
 				1B99CE1127A3427900EAA496 /* ButtonKit.swift */,
 				1B99CE1527A3478F00EAA496 /* ToggleKit.swift */,
-				1B99CE1827A35A1C00EAA496 /* Speaker.swift */,
 			);
 			path = SKNodeSubclasses;
 			sourceTree = "<group>";
@@ -227,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B99CDED27A3404F00EAA496 /* Assets.xcassets in Resources */,
+				1B70D82E27A496F4006B9A57 /* The Industry.m4a in Resources */,
 				1B99CDF027A3404F00EAA496 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +268,7 @@
 				1B99CE2227A35BF900EAA496 /* SpeakerScene.swift in Sources */,
 				1B99CE0127A3410000EAA496 /* SceneReference.swift in Sources */,
 				1B99CDFB27A340A500EAA496 /* BoardKit.swift in Sources */,
+				1B70D83027A4A1B0006B9A57 /* Communication.swift in Sources */,
 				1B99CE1B27A35A6500EAA496 /* GameCenterStates.swift in Sources */,
 				1B99CE1227A3427900EAA496 /* ButtonKit.swift in Sources */,
 				1B99CE1E27A35B2200EAA496 /* BasicTypeExtensions.swift in Sources */,
@@ -255,6 +282,7 @@
 				1B99CE0327A3411800EAA496 /* RootScene.swift in Sources */,
 				1B99CE1627A3478F00EAA496 /* ToggleKit.swift in Sources */,
 				1B99CE2027A35B5D00EAA496 /* SuperCharacters.swift in Sources */,
+				1B70D82B27A4965D006B9A57 /* Music.swift in Sources */,
 				1B99CE2627A3600200EAA496 /* ChatBox.swift in Sources */,
 				1B99CE1027A3423800EAA496 /* StackKit.swift in Sources */,
 				1B99CDE327A3404C00EAA496 /* AppDelegate.swift in Sources */,

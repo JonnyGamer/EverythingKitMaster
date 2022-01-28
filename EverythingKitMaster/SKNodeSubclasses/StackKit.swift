@@ -94,6 +94,11 @@ open class VStack: SKNode {
             i.place(.left, on: .zero, .right)
         }
     }
+    func rightAlign() {
+        for i in children {
+            i.place(.right, on: .zero, .left)
+        }
+    }
     
     public override init() {
         super.init()

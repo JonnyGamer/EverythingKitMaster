@@ -52,6 +52,16 @@ open class RootScene: SKScene {
         swiped(CGVector.init(dx: event.location(in: self).x - touchBeganAt.x, dy: event.location(in: self).y - touchBeganAt.y))
         currentScene.touchEnded()
     }
+    open override func keyDown(with event: NSEvent) {
+        print(event.keyCode)
+        switch event.keyCode {
+        case 126: currentScene._onKeyDown(.up)
+        case 125: currentScene._onKeyDown(.down)
+        case 36: currentScene._onKeyDown(.return)
+        default: return
+        }
+    }
+    
     #endif
     
     #if os(iOS)
