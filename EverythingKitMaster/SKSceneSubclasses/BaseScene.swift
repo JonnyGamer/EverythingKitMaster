@@ -28,6 +28,21 @@ open class Scene: SKNode {
     var option = false
     var chatBox: ChatBox?
     
+    func pressedA() {
+        if chatBox == nil {
+            if let s = (self as? SpeakerScene)?.canSpeakWith, let message = (self as? SpeakerScene)?.peopleToSpeakWith[s.char] {
+    
+                let woah = DispatchQueue.init(label: "")
+                woah.async { [self] in
+                    self.message(message)
+                }
+                
+            }
+        } else {
+            chatBox?.next()
+        }
+    }
+    
     public required init(_ screenSize: CGSize = CGSize.init(width: w, height: h)) {
         self.background = SKSpriteNode.init(color: .white, size: .veryBig)
         background.zPosition = -.infinity
@@ -45,6 +60,7 @@ open class Scene: SKNode {
         fatalError("init(coder:) has not been implemented")
     }
     
+    public func update() {}
     public func touchBegan() {}
     public func touchEnded() {}
     public func began() {}
@@ -54,17 +70,15 @@ open class Scene: SKNode {
     public func present(_ node: Scene.Type, incomingFrom: Incoming = .center, duration: Double = 0.5) {
         (scene as? RootScene)?.present(node.init(), incomingFrom: incomingFrom, duration: duration)
     }
-    public func present(_ node: Scene.Type, fade: Bool, duration: Double = 0.5) {
-        (scene as? RootScene)?.present(node.init(), fade: fade, duration: duration)
-    }
+//    public func present(_ node: Scene.Type, fade: Bool, duration: Double = 0.5) {
+//        (scene as? RootScene)?.present(node.init(), fade: fade, duration: duration)
+//    }
     func pressedKey(_ key: Keys) {}
     func _onKeyDown(_ key: Keys) {
         if key == .up {
             chatBox?.moveSelection(1)
         } else if key == .down {
             chatBox?.moveSelection(-1)
-        } else if key == .return {
-            chatBox?.next()
         }
     }
     

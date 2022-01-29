@@ -68,9 +68,9 @@ public extension SKNode {
 }
 
 public extension SKNode {
-    func fadeIn() {
+    func fadeIn(with: Double = 0.1) {
         alpha = 0
-        run(.fadeIn(withDuration: 0.1))
+        run(.fadeIn(withDuration: with))
     }
     func fadeOut() {
         run(.fadeOut(withDuration: 0.1))
@@ -79,6 +79,17 @@ public extension SKNode {
     func fadeOutGoodBye() {
         run(.fadeOut(withDuration: 0.1)) {
             self.removeFromParent()
+        }
+    }
+}
+
+extension SKNode {
+    func removeEveryChild() {
+        for i in children {
+            i.removeEveryChild()
+        }
+        if children.isEmpty {
+            removeFromParent()
         }
     }
 }

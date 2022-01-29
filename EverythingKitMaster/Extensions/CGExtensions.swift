@@ -43,3 +43,7 @@ public extension CGRect {
         return Self.init(origin: .zero, size: .screenSize)
     }
 }
+
+func pointOnACircle(angle: Double) -> CGVector {
+    return CGVector(dx: cos((angle * .pi) / 180), dy: sin((angle * .pi) / 180))
+}

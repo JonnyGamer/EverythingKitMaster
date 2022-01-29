@@ -8,41 +8,12 @@
 import SpriteKit
 import GameplayKit
 
-enum MusicList: String, MusicType {
-    case theIndustry = "The Industry"//Music.o.playMusic("The Industry")
-}
 
-class GameScene: Scene, SpeakerScene {
-    
-    var backgroundMusic: MusicType = MusicList.theIndustry
-    var peopleToSpeakWith: [SuperCharacters : Communication] = [
-        .base(.basketShop, 250, 250) : .message(["Foo Bar!"])
-    ]
+
+class GameScene: Scene {
     
     override func touchBegan() {
-        
-        if chatBox == nil {
-        
-            let woah = DispatchQueue.init(label: "")
-            woah.async { [self] in
-                message(.long([
-                    .message(["Hi there"]),
-                    .message(["This is something else"]),
-                    .multipleChoice(["Choose One"], [
-                        (["Pick me!"], .message(["You're trash."])),
-                        (["Pick me!"], .message(["You're trash."])),
-                        (["No...","Pick me!"], .message(["You're actually trash!"])),
-                        (["Switch Scene!"], .present(GameScene.self, incomingFrom: .left)),
-                    ]),
-                    .playMusic(MusicList.theIndustry),
-                    .run {
-                        return .random() ? .message(["1"]) : .message(["0"])
-                    }
-                ]))
-            }
-            
-        }
-        
+        //present(ShuttleRoom1.self)
     }
     
     override func movedToView() {
@@ -50,9 +21,7 @@ class GameScene: Scene, SpeakerScene {
     }
     
     override func began() {
-        background.color = .white
-        
-        setupScene(self)
+        background.color = .white 
         
         SpriteButton.init(size: .hundred, fillColor: (0.53, 0.2, 1.0), rgb: false).then {
             $0.button.addChild(SKLabelNode(text: "foo").then({ text in
@@ -67,6 +36,20 @@ class GameScene: Scene, SpeakerScene {
             $0.place(.top, on: .screen, .top)
         }
         
+        
+        SpriteButton.init(size: .init(width: 400, height: 200), fillColor: (0.53, 0.2, 1.0), rgb: false).then {
+            $0.button.addChild(SKLabelNode(text: "Antilone").then({ text in
+                text.basicText(keepInside: .init(width: 400, height: 200).times(0.9))
+            }))
+            connectButton($0)
+            $0.touchEndedOn = { _ in
+                self.present(ShuttleRoom1.self)
+            }
+            addChild($0)
+            $0.centerAt(point: .midScreen)
+        }
+        
+        /*
         let stack = HStack([
             
             Toggle.init(default: false, height: 100, color: .green),
@@ -95,6 +78,7 @@ class GameScene: Scene, SpeakerScene {
         addChild(stack)
         stack.keepInside(.screenSize.times(0.9))
         stack.centerAt(point: .midScreen)
+        */
         
     }
     

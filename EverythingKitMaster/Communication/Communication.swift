@@ -23,9 +23,12 @@ extension Communication {
         })
     }
     
-    static func goto(_ string: [String],_ scene: Scene.Type) -> Communication {
+    static func goto(_ string: [String],_ scene: Scene.Type, incomingFrom: Incoming, startPosition: (Int, Int)) -> Communication {
         return .multipleChoice(string, [
-            (["yes"], .present(scene)),
+            (["yes"], .long([
+                .exec({ SpeakerScene.StartPosition = .init(x: startPosition.0, y: startPosition.1) }),
+                .present(scene, incomingFrom: incomingFrom)
+            ]) ),
             (["no"], .none),
         ])
     }

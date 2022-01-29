@@ -7,6 +7,10 @@
 
 import AVFoundation
 
+enum MusicList: String, MusicType {
+    case theIndustry = "The Industry"//Music.o.playMusic("The Industry")
+}
+
 protocol MusicType {
     var rawValue: String { get }
 }

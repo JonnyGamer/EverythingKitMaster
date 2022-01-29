@@ -10,6 +10,23 @@
 		1B70D82B27A4965D006B9A57 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D82A27A4965D006B9A57 /* Music.swift */; };
 		1B70D82E27A496F4006B9A57 /* The Industry.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D82D27A496F3006B9A57 /* The Industry.m4a */; };
 		1B70D83027A4A1B0006B9A57 /* Communication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D82F27A4A1B0006B9A57 /* Communication.swift */; };
+		1B70D83327A4B33D006B9A57 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D83227A4B33D006B9A57 /* GameController.swift */; };
+		1B70D83527A4B36E006B9A57 /* GameControllerScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D83427A4B36E006B9A57 /* GameControllerScene.swift */; };
+		1B70D83827A4B65A006B9A57 /* JoyStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D83727A4B65A006B9A57 /* JoyStick.swift */; };
+		1B70D83A27A4BD8D006B9A57 /* BumpScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D83927A4BD8D006B9A57 /* BumpScene.swift */; };
+		1B70D83C27A4C750006B9A57 /* ShuttleRoom1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D83B27A4C750006B9A57 /* ShuttleRoom1.sks */; };
+		1B70D83F27A59C2B006B9A57 /* ShuttleRoom1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D83E27A59C2B006B9A57 /* ShuttleRoom1.swift */; };
+		1B70D84127A59E79006B9A57 /* ShuttleRoom2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D84027A59E79006B9A57 /* ShuttleRoom2.sks */; };
+		1B70D84327A59E92006B9A57 /* ShuttleRoom2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D84227A59E92006B9A57 /* ShuttleRoom2.swift */; };
+		1B70D84527A59F9F006B9A57 /* Maps.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D84427A59F9F006B9A57 /* Maps.xcassets */; };
+		1B70D84B27A5A38E006B9A57 /* ShuttleRoom5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D84727A5A38E006B9A57 /* ShuttleRoom5.sks */; };
+		1B70D84C27A5A38E006B9A57 /* ShuttleRoom3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D84827A5A38E006B9A57 /* ShuttleRoom3.sks */; };
+		1B70D84D27A5A38E006B9A57 /* ShuttleRoom6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D84927A5A38E006B9A57 /* ShuttleRoom6.sks */; };
+		1B70D84E27A5A38E006B9A57 /* ShuttleRoom4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1B70D84A27A5A38E006B9A57 /* ShuttleRoom4.sks */; };
+		1B70D85027A5A3DF006B9A57 /* ShuttleRoom3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D84F27A5A3DF006B9A57 /* ShuttleRoom3.swift */; };
+		1B70D85227A5A4F1006B9A57 /* ShuttleRoom4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D85127A5A4F1006B9A57 /* ShuttleRoom4.swift */; };
+		1B70D85427A5A52F006B9A57 /* ShuttleRoom5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D85327A5A52F006B9A57 /* ShuttleRoom5.swift */; };
+		1B70D85627A5A56F006B9A57 /* ShuttleRoom6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B70D85527A5A56F006B9A57 /* ShuttleRoom6.swift */; };
 		1B99CDE327A3404C00EAA496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99CDE227A3404C00EAA496 /* AppDelegate.swift */; };
 		1B99CDE927A3404C00EAA496 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99CDE827A3404C00EAA496 /* GameScene.swift */; };
 		1B99CDEB27A3404C00EAA496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B99CDEA27A3404C00EAA496 /* ViewController.swift */; };
@@ -42,6 +59,23 @@
 		1B70D82A27A4965D006B9A57 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		1B70D82D27A496F3006B9A57 /* The Industry.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Industry.m4a"; sourceTree = "<group>"; };
 		1B70D82F27A4A1B0006B9A57 /* Communication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Communication.swift; sourceTree = "<group>"; };
+		1B70D83227A4B33D006B9A57 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		1B70D83427A4B36E006B9A57 /* GameControllerScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerScene.swift; sourceTree = "<group>"; };
+		1B70D83727A4B65A006B9A57 /* JoyStick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyStick.swift; sourceTree = "<group>"; };
+		1B70D83927A4BD8D006B9A57 /* BumpScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumpScene.swift; sourceTree = "<group>"; };
+		1B70D83B27A4C750006B9A57 /* ShuttleRoom1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShuttleRoom1.sks; sourceTree = "<group>"; };
+		1B70D83E27A59C2B006B9A57 /* ShuttleRoom1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRoom1.swift; sourceTree = "<group>"; };
+		1B70D84027A59E79006B9A57 /* ShuttleRoom2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShuttleRoom2.sks; sourceTree = "<group>"; };
+		1B70D84227A59E92006B9A57 /* ShuttleRoom2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRoom2.swift; sourceTree = "<group>"; };
+		1B70D84427A59F9F006B9A57 /* Maps.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Maps.xcassets; sourceTree = "<group>"; };
+		1B70D84727A5A38E006B9A57 /* ShuttleRoom5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShuttleRoom5.sks; sourceTree = "<group>"; };
+		1B70D84827A5A38E006B9A57 /* ShuttleRoom3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShuttleRoom3.sks; sourceTree = "<group>"; };
+		1B70D84927A5A38E006B9A57 /* ShuttleRoom6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShuttleRoom6.sks; sourceTree = "<group>"; };
+		1B70D84A27A5A38E006B9A57 /* ShuttleRoom4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShuttleRoom4.sks; sourceTree = "<group>"; };
+		1B70D84F27A5A3DF006B9A57 /* ShuttleRoom3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRoom3.swift; sourceTree = "<group>"; };
+		1B70D85127A5A4F1006B9A57 /* ShuttleRoom4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRoom4.swift; sourceTree = "<group>"; };
+		1B70D85327A5A52F006B9A57 /* ShuttleRoom5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRoom5.swift; sourceTree = "<group>"; };
+		1B70D85527A5A56F006B9A57 /* ShuttleRoom6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuttleRoom6.swift; sourceTree = "<group>"; };
 		1B99CDDF27A3404C00EAA496 /* EverythingKitMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverythingKitMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B99CDE227A3404C00EAA496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B99CDE827A3404C00EAA496 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -98,16 +132,55 @@
 				1B99CE2527A3600200EAA496 /* ChatBox.swift */,
 				1B70D82F27A4A1B0006B9A57 /* Communication.swift */,
 				1B99CE1F27A35B5D00EAA496 /* SuperCharacters.swift */,
-				1B99CE2127A35BF900EAA496 /* SpeakerScene.swift */,
 				1B99CE1827A35A1C00EAA496 /* Speaker.swift */,
 			);
 			path = Communication;
+			sourceTree = "<group>";
+		};
+		1B70D83627A4B60C006B9A57 /* GameController */ = {
+			isa = PBXGroup;
+			children = (
+				1B70D83227A4B33D006B9A57 /* GameController.swift */,
+				1B70D83427A4B36E006B9A57 /* GameControllerScene.swift */,
+				1B70D83727A4B65A006B9A57 /* JoyStick.swift */,
+			);
+			path = GameController;
+			sourceTree = "<group>";
+		};
+		1B70D83D27A59C13006B9A57 /* PrologueRooms */ = {
+			isa = PBXGroup;
+			children = (
+				1B70D83B27A4C750006B9A57 /* ShuttleRoom1.sks */,
+				1B70D83E27A59C2B006B9A57 /* ShuttleRoom1.swift */,
+				1B70D84027A59E79006B9A57 /* ShuttleRoom2.sks */,
+				1B70D84227A59E92006B9A57 /* ShuttleRoom2.swift */,
+				1B70D84827A5A38E006B9A57 /* ShuttleRoom3.sks */,
+				1B70D84F27A5A3DF006B9A57 /* ShuttleRoom3.swift */,
+				1B70D84A27A5A38E006B9A57 /* ShuttleRoom4.sks */,
+				1B70D85127A5A4F1006B9A57 /* ShuttleRoom4.swift */,
+				1B70D84727A5A38E006B9A57 /* ShuttleRoom5.sks */,
+				1B70D85327A5A52F006B9A57 /* ShuttleRoom5.swift */,
+				1B70D84927A5A38E006B9A57 /* ShuttleRoom6.sks */,
+				1B70D85527A5A56F006B9A57 /* ShuttleRoom6.swift */,
+			);
+			path = PrologueRooms;
+			sourceTree = "<group>";
+		};
+		1B70D84627A59FA3006B9A57 /* Catalogs */ = {
+			isa = PBXGroup;
+			children = (
+				1B70D84427A59F9F006B9A57 /* Maps.xcassets */,
+			);
+			path = Catalogs;
 			sourceTree = "<group>";
 		};
 		1B99CDD627A3404C00EAA496 = {
 			isa = PBXGroup;
 			children = (
 				1B99CDE827A3404C00EAA496 /* GameScene.swift */,
+				1B70D84627A59FA3006B9A57 /* Catalogs */,
+				1B70D83D27A59C13006B9A57 /* PrologueRooms */,
+				1B70D83627A4B60C006B9A57 /* GameController */,
 				1B70D83127A4AE2F006B9A57 /* Communication */,
 				1B99CE0027A3410000EAA496 /* SceneReference.swift */,
 				1B70D82A27A4965D006B9A57 /* Music.swift */,
@@ -148,6 +221,8 @@
 			children = (
 				1B99CE0227A3411800EAA496 /* RootScene.swift */,
 				1B99CE0427A3412700EAA496 /* BaseScene.swift */,
+				1B99CE2127A35BF900EAA496 /* SpeakerScene.swift */,
+				1B70D83927A4BD8D006B9A57 /* BumpScene.swift */,
 			);
 			path = SKSceneSubclasses;
 			sourceTree = "<group>";
@@ -251,8 +326,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B70D84C27A5A38E006B9A57 /* ShuttleRoom3.sks in Resources */,
+				1B70D84E27A5A38E006B9A57 /* ShuttleRoom4.sks in Resources */,
+				1B70D84B27A5A38E006B9A57 /* ShuttleRoom5.sks in Resources */,
 				1B99CDED27A3404F00EAA496 /* Assets.xcassets in Resources */,
+				1B70D84127A59E79006B9A57 /* ShuttleRoom2.sks in Resources */,
+				1B70D84527A59F9F006B9A57 /* Maps.xcassets in Resources */,
+				1B70D84D27A5A38E006B9A57 /* ShuttleRoom6.sks in Resources */,
 				1B70D82E27A496F4006B9A57 /* The Industry.m4a in Resources */,
+				1B70D83C27A4C750006B9A57 /* ShuttleRoom1.sks in Resources */,
 				1B99CDF027A3404F00EAA496 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +350,10 @@
 				1B99CE2227A35BF900EAA496 /* SpeakerScene.swift in Sources */,
 				1B99CE0127A3410000EAA496 /* SceneReference.swift in Sources */,
 				1B99CDFB27A340A500EAA496 /* BoardKit.swift in Sources */,
+				1B70D83327A4B33D006B9A57 /* GameController.swift in Sources */,
+				1B70D84327A59E92006B9A57 /* ShuttleRoom2.swift in Sources */,
 				1B70D83027A4A1B0006B9A57 /* Communication.swift in Sources */,
+				1B70D85027A5A3DF006B9A57 /* ShuttleRoom3.swift in Sources */,
 				1B99CE1B27A35A6500EAA496 /* GameCenterStates.swift in Sources */,
 				1B99CE1227A3427900EAA496 /* ButtonKit.swift in Sources */,
 				1B99CE1E27A35B2200EAA496 /* BasicTypeExtensions.swift in Sources */,
@@ -279,14 +364,21 @@
 				1B99CE0C27A341EB00EAA496 /* KeyboardKit.swift in Sources */,
 				1B99CDE927A3404C00EAA496 /* GameScene.swift in Sources */,
 				1B99CDFF27A340E400EAA496 /* CGExtensions.swift in Sources */,
+				1B70D83F27A59C2B006B9A57 /* ShuttleRoom1.swift in Sources */,
 				1B99CE0327A3411800EAA496 /* RootScene.swift in Sources */,
 				1B99CE1627A3478F00EAA496 /* ToggleKit.swift in Sources */,
 				1B99CE2027A35B5D00EAA496 /* SuperCharacters.swift in Sources */,
+				1B70D83827A4B65A006B9A57 /* JoyStick.swift in Sources */,
 				1B70D82B27A4965D006B9A57 /* Music.swift in Sources */,
+				1B70D83527A4B36E006B9A57 /* GameControllerScene.swift in Sources */,
+				1B70D85627A5A56F006B9A57 /* ShuttleRoom6.swift in Sources */,
+				1B70D85227A5A4F1006B9A57 /* ShuttleRoom4.swift in Sources */,
 				1B99CE2627A3600200EAA496 /* ChatBox.swift in Sources */,
 				1B99CE1027A3423800EAA496 /* StackKit.swift in Sources */,
+				1B70D83A27A4BD8D006B9A57 /* BumpScene.swift in Sources */,
 				1B99CDE327A3404C00EAA496 /* AppDelegate.swift in Sources */,
 				1B99CE0527A3412700EAA496 /* BaseScene.swift in Sources */,
+				1B70D85427A5A52F006B9A57 /* ShuttleRoom5.swift in Sources */,
 				1B99CE1927A35A1C00EAA496 /* Speaker.swift in Sources */,
 				1B99CE0727A3416800EAA496 /* Touchable.swift in Sources */,
 				1B99CE0E27A3422300EAA496 /* SKActionExtensions.swift in Sources */,

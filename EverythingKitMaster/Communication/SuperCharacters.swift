@@ -46,14 +46,23 @@ extension Characters {
 
 enum SuperCharacters: Hashable {
     
-    case base(Characters, Int, Int)
+    case base(Characters)
+    case from(Characters, Int)
+    
+//    var nameAndPosition: (String, Int, Int) {
+//        switch self {
+//        case .base(let c, let d, let e):
+//            return (c.rawValue, d, e)
+//        }
+//    }
     
     func hash(into hasher: inout Hasher) {
         switch self {
-        case .base(let c, let d, let e):
+        case .base(let c):
+            hasher.combine(c)
+        case .from(let c, let d):
             hasher.combine(c)
             hasher.combine(d)
-            hasher.combine(e)
         }
     }
     
